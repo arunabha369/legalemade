@@ -56,7 +56,7 @@ export function InstagramFeed() {
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
                     <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group border-2 border-primary/10">
                         {/* <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" /> */}
-                        <Image src="/kalyan_logo.png" fill alt="Kalyan Biswas Logo" className="object-cover" />
+                        <Image src="/founder.jpg" fill alt="Kalyan Biswas" className="object-cover" />
                     </div>
                     <h3 className="text-xl font-bold font-serif text-primary">Kalyan Biswas</h3>
                     <p className="text-gray-500 font-medium mb-4">@kalyanb23</p>
