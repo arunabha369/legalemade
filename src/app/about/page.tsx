@@ -29,13 +29,13 @@ export default function AboutPage() {
 
                         <div className="prose prose-lg text-gray-600 space-y-4">
                             <p>
-                                Kalyan Biswas, a final-year LLB student at Surendranath Law College, founded LegalE Made with a clear mission: to democratize legal knowledge. His journey is driven by a unique blend of academic rigor, practical advocacy, and a deep-seated passion for teaching.
+                                Kalyan Biswas, a final year BA.LLB student at Surendranath Law College under Calcutta University, founded LegalEmade with a clear mission to spread legal knowledge among the common people. His journey is driven by a unique blend of academic rigor, practical advocacy, and a deep-seated passion for teaching.
                             </p>
                             <p>
-                                His practical experience includes serving as a Legal Intern at P. Nath & Associates in June 2025, where he honed his skills in comprehensive article writing, in-depth legal research, and drafting crucial legal documents. This hands-on exposure to proceedings reinforced his belief that the complexity of law should not be a barrier to justice.
+                                His practical experience includes serving as a Legal Intern at Daslegal Advocates and P. Nath & Associates, where he honed his skills in comprehensive article writing, in-depth legal research, and drafting crucial legal documents. This hands-on exposure to proceedings reinforced his belief that the complexity of law should not be a barrier to justice.
                             </p>
                             <p>
-                                A forward-thinking researcher, Kalyan has also contributed to contemporary legal discourse. His publication, "Mind Over Machine: Who is Controlling Whom?" (Journal of Legal Research and Polity, 2025), critically examines the intersection of Artificial Intelligence and Human Rights. Through LegalE Made, he combines this scholarly depth with accessible explanation to empower every citizen.
+                                A forward-thinking researcher, Kalyan has also contributed to contemporary legal discourse. His publication, "Mind Over Machine: Who is Controlling Whom?" (Journal of Legal Research and Polity, 2025), critically examines the intersection of Artificial Intelligence and Human Rights. Through LegalEmade, he combines this scholarly depth with accessible explanation to empower every citizen.
                             </p>
                         </div>
                     </div>
