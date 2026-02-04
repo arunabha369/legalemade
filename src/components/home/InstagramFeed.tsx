@@ -14,25 +14,46 @@ export function InstagramFeed() {
                 <p className="text-gray-600 mt-2">Get your daily legal dose at @legalemade & @aarambh_aequitas_lawfoundation</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                {/* Placeholders for visual balance */}
-                {[1, 2, 3].map((i) => (
-                    <div key={i} className="aspect-square bg-gray-50 rounded-xl shadow-inner border border-gray-200 flex flex-col items-center justify-center p-6 text-center group hover:bg-gray-100 transition-colors">
-                        <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 text-pink-500 shadow-sm">
-                            <Instagram className="h-8 w-8" />
-                        </div>
-                        <p className="text-sm text-gray-900 font-semibold">Latest Update {i}</p>
-                        <p className="text-xs text-gray-500 mt-1">@legalemade</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {/* Profile 1: LegalE Made */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group">
+                        <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" />
+                        {/* <Image src="/path-to-logo.jpg" fill alt="LegalE Made Logo" className="object-cover" /> */}
                     </div>
-                ))}
+                    <h3 className="text-xl font-bold font-serif text-primary">LegalE Made</h3>
+                    <p className="text-gray-500 font-medium mb-4">@legalemade</p>
+                    <p className="text-gray-600 text-sm mb-6 max-w-xs">
+                        Simplifying law for everyone. Daily updates, legal facts, and student resources.
+                    </p>
+                    <a href="https://instagram.com/legalemade" target="_blank" rel="noopener noreferrer" className="mt-auto">
+                        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full px-8">
+                            Follow
+                        </Button>
+                    </a>
+                </div>
+
+                {/* Profile 2: Aarambh Aequitas */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group">
+                        <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" />
+                        {/* <Image src="/path-to-logo.jpg" fill alt="Aarambh Aequitas Logo" className="object-cover" /> */}
+                    </div>
+                    <h3 className="text-xl font-bold font-serif text-primary">Aarambh Aequitas</h3>
+                    <p className="text-gray-500 font-medium mb-4">@aarambh_aequitas_lawfoundation</p>
+                    <p className="text-gray-600 text-sm mb-6 max-w-xs">
+                        Dedicated to legal aid, awareness, and social justice initiatives.
+                    </p>
+                    <a href="https://instagram.com/aarambh_aequitas_lawfoundation" target="_blank" rel="noopener noreferrer" className="mt-auto">
+                        <Button variant="outline" className="border-pink-600 text-pink-600 hover:bg-pink-50 w-full px-8">
+                            Follow
+                        </Button>
+                    </a>
+                </div>
             </div>
 
             <div className="text-center mt-12">
-                <a href="https://instagram.com/legalemade" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0 text-white shadow-lg shadow-purple-200">
-                        Follow on Instagram
-                    </Button>
-                </a>
+                <p className="text-gray-400 text-sm">Follow us to stay updated with the latest legal news and events.</p>
             </div>
         </Section>
     );

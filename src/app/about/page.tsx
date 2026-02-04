@@ -183,7 +183,7 @@ export default function AboutPage() {
             </Section>
 
             {/* CTA */}
-            <Section className="bg-primary text-white text-center">
+            <Section className="!bg-primary text-white text-center">
                 <h2 className="text-3xl font-serif font-bold mb-6">Join Our Growing Community</h2>
                 <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
                     Whether you are a law student or a curious citizen, there is a place for you here.
@@ -193,7 +193,7 @@ export default function AboutPage() {
                         <Button size="lg" variant="secondary" className="font-bold">Get in Touch</Button>
                     </Link>
                     <Link href="/learn">
-                        <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">Start Learning</Button>
+                        <Button size="lg" variant="outline" className="border-white text-white !bg-transparent hover:!bg-white hover:!text-primary">Start Learning</Button>
                     </Link>
                 </div>
             </Section>

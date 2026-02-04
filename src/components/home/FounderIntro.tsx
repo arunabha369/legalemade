@@ -98,7 +98,7 @@ export function FounderIntro() {
                             </Button>
                         </Link>
                         <Link href="https://www.linkedin.com/in/kalyan-biswas-521194365/" target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" className="gap-2 text-primary border border-gray-200 hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-all">
+                            <Button variant="ghost" className="gap-2 text-primary border border-gray-200 hover:!bg-[#0077b5] hover:!text-white hover:!border-[#0077b5] transition-all">
                                 <Linkedin className="h-4 w-4" />
                                 Connect on LinkedIn
                             </Button>

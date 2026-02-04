@@ -33,7 +33,7 @@ const topicData: Record<string, {
             { title: "Emergency Provisions", desc: "National, State, and Financial Emergencies." }
         ]
     },
-    "criminal-law-ipc-bns": {
+    "criminal-law": {
         title: "Criminal Law (IPC/BNS)",
         description: "Understanding crimes, punishments, and the new Bharatiya Nyaya Sanhita.",
         icon: Gavel,
@@ -52,7 +52,7 @@ const topicData: Record<string, {
             { title: "Women's Safety Laws", desc: "Provisions for safety and dignity of women." }
         ]
     },
-    "civil-procedure-cpc": {
+    "civil-procedure": {
         title: "Civil Procedure (CPC)",
         description: "The rules and procedures for civil litigation in India.",
         icon: AlertTriangle,
@@ -130,9 +130,9 @@ const topicData: Record<string, {
     },
 };
 
-export default function TopicPage({ params }: { params: { topic: string } }) {
+export default async function TopicPage({ params }: { params: Promise<{ topic: string }> }) {
     // Check if topic exists
-    const slug = params.topic;
+    const { topic: slug } = await params;
     const topic = topicData[slug];
 
     if (!topic) {
