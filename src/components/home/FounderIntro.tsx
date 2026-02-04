@@ -1,18 +1,23 @@
-import { Section, Container } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { User, BookOpen, Linkedin } from "lucide-react";
+import Image from "next/image";
+import { User, BookOpen, Linkedin, FileText } from "lucide-react";
 
 export function FounderIntro() {
     return (
         <Section>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Image Placeholder */}
+                {/* Image */}
                 <div className="relative order-2 lg:order-1">
                     <div className="aspect-[4/5] md:aspect-square bg-gray-100 rounded-2xl overflow-hidden relative shadow-xl">
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-200">
-                            <span className="text-lg font-medium">[Kalyan Biswas Photo]</span>
-                        </div>
+                        <Image
+                            src="/founder.jpg"
+                            alt="Kalyan Biswas"
+                            fill
+                            className="object-cover"
+                            priority
+                        />
                         {/* Decorative element */}
                         <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary/20 rounded-full blur-2xl"></div>
                         <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
@@ -45,17 +50,43 @@ export function FounderIntro() {
                         </p>
                     </div>
 
-                    <div className="bg-gray-50 border border-gray-100 rounded-lg p-4 mt-2">
-                        <div className="flex items-start gap-3">
-                            <div className="mt-1 bg-primary/10 p-2 rounded-full">
-                                <BookOpen className="h-4 w-4 text-primary" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                        {/* Experience */}
+                        <div className="bg-gray-50 border border-gray-100 rounded-lg p-4">
+                            <div className="flex items-start gap-3">
+                                <div className="mt-1 bg-primary/10 p-2 rounded-full">
+                                    <BookOpen className="h-4 w-4 text-primary" />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-primary text-sm">Legal Intern</h4>
+                                    <p className="text-xs text-secondary font-medium">P. Nath & Associates • Jun 2025</p>
+                                    <p className="text-xs text-gray-600 mt-1 leading-relaxed line-clamp-2">
+                                        Legal research, drafting, and article writing.
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h4 className="font-bold text-primary text-sm">Legal Intern</h4>
-                                <p className="text-xs text-secondary font-medium">P. Nath & Associates • Jun 2025 (1 mo)</p>
-                                <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                                    Contributed to legal proceedings, focusing primarily on Article writing, Legal research, and Drafting.
-                                </p>
+                        </div>
+
+                        {/* Publication */}
+                        <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                            <div className="flex items-start gap-3">
+                                <div className="mt-1 bg-secondary/10 p-2 rounded-full">
+                                    <FileText className="h-4 w-4 text-secondary" />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-primary text-sm">Research Publication</h4>
+                                    <p className="text-xs text-gray-900 font-bold mt-1 line-clamp-1">Mind Over Machine: Who is Controlling Whom?</p>
+                                    <p className="text-xs text-gray-500 mt-0.5">Journal of Legal Research and Polity (2025)</p>
+                                    <div className="flex gap-2 mt-2">
+                                        <a href="/Mind+Over+Machine+-+Who+is+Controlling+Whom.pdf" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
+                                            Read PDF
+                                        </a>
+                                        <span className="text-gray-300">|</span>
+                                        <a href="https://doi.org/10.64322/JLRP.2025.1104" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
+                                            DOI Link
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
