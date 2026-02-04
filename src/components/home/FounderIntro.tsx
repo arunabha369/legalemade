@@ -78,7 +78,7 @@ export function FounderIntro() {
                                     <p className="text-xs text-gray-900 font-bold mt-1 line-clamp-1">Mind Over Machine: Who is Controlling Whom?</p>
                                     <p className="text-xs text-gray-500 mt-0.5">Journal of Legal Research and Polity (2025)</p>
                                     <div className="flex gap-2 mt-2">
-                                        <a href="/Mind+Over+Machine+-+Who+is+Controlling+Whom.pdf" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
+                                        <a href="/Mind-Over-Machine.pdf" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
                                             Read PDF
                                         </a>
                                         <span className="text-gray-300">|</span>

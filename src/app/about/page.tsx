@@ -29,18 +29,13 @@ export default function AboutPage() {
 
                         <div className="prose prose-lg text-gray-600 space-y-4">
                             <p>
-                                Kalyan Biswas, currently a final-year LLB student at Surendranath Law College,
-                                started LegalE Made with a singular vision: to strip away the complexity of legal language
-                                and reveal the simple, powerful principles underneath.
+                                Kalyan Biswas, a final-year LLB student at Surendranath Law College, founded LegalE Made with a clear mission: to democratize legal knowledge. His journey is driven by a unique blend of academic rigor, practical advocacy, and a deep-seated passion for teaching.
                             </p>
                             <p>
-                                "I realized early on that many students struggle not with the concepts of law, but with
-                                the language of law. My teaching philosophy is built on the belief that if you can't
-                                explain it simply, you don't understand it well enough."
+                                His practical experience includes serving as a Legal Intern at P. Nath & Associates in June 2025, where he honed his skills in comprehensive article writing, in-depth legal research, and drafting crucial legal documents. This hands-on exposure to proceedings reinforced his belief that the complexity of law should not be a barrier to justice.
                             </p>
                             <p>
-                                What started as small study groups and notes sharing has now evolved into a platform
-                                dedicated to empowering law aspirants across the country.
+                                A forward-thinking researcher, Kalyan has also contributed to contemporary legal discourse. His publication, "Mind Over Machine: Who is Controlling Whom?" (Journal of Legal Research and Polity, 2025), critically examines the intersection of Artificial Intelligence and Human Rights. Through LegalE Made, he combines this scholarly depth with accessible explanation to empower every citizen.
                             </p>
                         </div>
                     </div>
@@ -124,7 +119,7 @@ export default function AboutPage() {
 
                                     <div className="flex flex-wrap gap-4 pt-2">
                                         <a
-                                            href="/Mind+Over+Machine+-+Who+is+Controlling+Whom.pdf"
+                                            href="/Mind-Over-Machine.pdf"
                                             target="_blank"
                                             className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors"
                                         >
