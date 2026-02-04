@@ -26,7 +26,7 @@ export function Footer() {
                         <h4 className="font-bold mb-4 text-secondary">Connect</h4>
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li><a href="https://instagram.com/legalemade" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors">Instagram</a></li>
-                            <li><a href="mailto:contact@legalemade.in" className="hover:text-secondary transition-colors">Email Us</a></li>
+                            <li><a href="mailto:biswaskalyan072@gmail.com" className="hover:text-secondary transition-colors">Email Us</a></li>
                         </ul>
                     </div>
 

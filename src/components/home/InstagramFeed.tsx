@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 
 export function InstagramFeed() {
     return (
@@ -14,19 +15,19 @@ export function InstagramFeed() {
                 <p className="text-gray-600 mt-2">Get your daily legal dose at @legalemade & @aarambh_aequitas_lawfoundation</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {/* Profile 1: LegalE Made */}
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group">
-                        <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" />
-                        {/* <Image src="/path-to-logo.jpg" fill alt="LegalE Made Logo" className="object-cover" /> */}
+                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group border-2 border-primary/10">
+                        {/* <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" /> */}
+                        <Image src="/instagram_logo.jpg" fill alt="LegalE Made Logo" className="object-cover" />
                     </div>
                     <h3 className="text-xl font-bold font-serif text-primary">LegalE Made</h3>
                     <p className="text-gray-500 font-medium mb-4">@legalemade</p>
-                    <p className="text-gray-600 text-sm mb-6 max-w-xs">
+                    <p className="text-gray-600 text-sm mb-6 max-w-xs flex-grow">
                         Simplifying law for everyone. Daily updates, legal facts, and student resources.
                     </p>
-                    <a href="https://instagram.com/legalemade" target="_blank" rel="noopener noreferrer" className="mt-auto">
+                    <a href="https://instagram.com/legalemade" target="_blank" rel="noopener noreferrer" className="mt-auto w-full">
                         <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full px-8">
                             Follow
                         </Button>
@@ -35,17 +36,35 @@ export function InstagramFeed() {
 
                 {/* Profile 2: Aarambh Aequitas */}
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group">
-                        <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" />
-                        {/* <Image src="/path-to-logo.jpg" fill alt="Aarambh Aequitas Logo" className="object-cover" /> */}
+                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group border-2 border-primary/10">
+                        {/* <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" /> */}
+                        <Image src="/aarambh_logo.jpg" fill alt="Aarambh Aequitas Logo" className="object-cover" />
                     </div>
                     <h3 className="text-xl font-bold font-serif text-primary">Aarambh Aequitas</h3>
                     <p className="text-gray-500 font-medium mb-4">@aarambh_aequitas_lawfoundation</p>
-                    <p className="text-gray-600 text-sm mb-6 max-w-xs">
+                    <p className="text-gray-600 text-sm mb-6 max-w-xs flex-grow">
                         Dedicated to legal aid, awareness, and social justice initiatives.
                     </p>
-                    <a href="https://instagram.com/aarambh_aequitas_lawfoundation" target="_blank" rel="noopener noreferrer" className="mt-auto">
-                        <Button variant="outline" className="border-pink-600 text-pink-600 hover:bg-pink-50 w-full px-8">
+                    <a href="https://instagram.com/aarambh_aequitas_lawfoundation" target="_blank" rel="noopener noreferrer" className="mt-auto w-full">
+                        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full px-8">
+                            Follow
+                        </Button>
+                    </a>
+                </div>
+
+                {/* Profile 3: Kalyan Biswas */}
+                <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                    <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6 relative overflow-hidden group border-2 border-primary/10">
+                        {/* <Instagram className="h-10 w-10 text-gray-400 group-hover:text-pink-600 transition-colors" /> */}
+                        <Image src="/kalyan_logo.png" fill alt="Kalyan Biswas Logo" className="object-cover" />
+                    </div>
+                    <h3 className="text-xl font-bold font-serif text-primary">Kalyan Biswas</h3>
+                    <p className="text-gray-500 font-medium mb-4">@kalyanb23</p>
+                    <p className="text-gray-600 text-sm mb-6 max-w-xs flex-grow">
+                        Founder & Legal Educator. Sharing personal insights and journey.
+                    </p>
+                    <a href="https://www.instagram.com/kalyanb23/" target="_blank" rel="noopener noreferrer" className="mt-auto w-full">
+                        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-full px-8">
                             Follow
                         </Button>
                     </a>
