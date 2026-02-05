@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LegalE Made - Law Made Simple
 
-## Getting Started
+![LegalE Made Banner](public/logo.png) <!-- Replace with actual logo path if available, or remove if not -->
 
-First, run the development server:
+**Simplifying Indian laws for students, aspirants, and citizens.**
+
+LegalE Made is a comprehensive platform designed to bridge the gap between complex legal texts and practical understanding. Whether you are a law student, a competitive exam aspirant, or a citizen wanting to know your rights, LegalE Made provides simplified, accurate, and accessible legal resources.
+
+## 🚀 Features
+
+- **📚 Law Education**: Simplified explanations of complex legal concepts, subjects like Constitutional Law, IPC, CrPC, and more.
+- **📰 Daily Legal Updates**: Stay informed with the latest legal news, amendments, and notifications.
+- **⚖️ Case Law Simplification**: Landmark judgments and recent court verdicts broken down into easy-to-understand summaries.
+- **👥 Legal Awareness**: Empowering common citizens by explaining rights and duties in simple, practical language.
+- **🧠 Expert Insights**: Curated content to help you master legal topics.
+
+## 🛠️ Tech Stack
+
+This project is built with a modern, performance-oriented technology stack:
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: [Open Sans](https://fonts.google.com/specimen/Open+Sans) & [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+- **Linting**: [ESLint](https://eslint.org/)
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── app/                 # Next.js App Router pages
+│   ├── page.tsx         # Landing page
+│   ├── layout.tsx       # Root layout
+│   └── students/        # Students section
+├── components/          # Reusable UI components
+│   ├── common/          # Shared components (Navbar, Footer, etc.)
+│   ├── home/            # Homepage specific components (Hero, Features, etc.)
+│   └── ui/              # Generic UI elements (Section, Container, etc.)
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏁 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Follow these steps to set up the project locally.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js (v18 or higher recommended)
+- npm, yarn, pnpm, or bun
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clone the repository:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/arunabha369/legalemade.git
+    cd legalemade
+    ```
 
-## Deploy on Vercel
+2.  **Install dependencies:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Run the development server:**
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
+
+4.  **Open the app:**
+
+    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## 📜 Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run start`: Starts the production server.
+- `npm run lint`: Runs ESLint to check for code quality issues.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve LegalE Made, please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/YourFeature`).
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/YourFeature`).
+5.  Open a Pull Request.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by [Arunabha Banerjee](https://github.com/arunabha369)
