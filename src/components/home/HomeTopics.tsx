@@ -8,51 +8,56 @@ const categories = [
         title: "Constitutional Law",
         slug: "constitutional-law",
         description: "Fundamental rights, duties, and the framework of Indian governance.",
-        color: "bg-blue-100 text-blue-700",
+        color: "bg-blue-500/10 text-blue-400 border-blue-500/15",
     },
     {
         icon: Gavel,
         title: "Criminal Law (IPC/BNS)",
         slug: "criminal-law",
         description: "Understanding crimes, punishments, and the new Bharatiya Nyaya Sanhita.",
-        color: "bg-red-100 text-red-700",
+        color: "bg-red-500/10 text-red-400 border-red-500/15",
     },
     {
         icon: AlertTriangle,
         title: "Civil Procedure (CPC)",
         slug: "civil-procedure",
         description: "The rules and procedures for civil litigation in India.",
-        color: "bg-orange-100 text-orange-700",
+        color: "bg-orange-500/10 text-orange-400 border-orange-500/15",
     },
     {
         icon: Briefcase,
         title: "Corporate Law",
         slug: "corporate-law",
         description: "Company acts, mergers, and business regulations.",
-        color: "bg-green-100 text-green-700",
+        color: "bg-green-500/10 text-green-400 border-green-500/15",
     },
     {
         icon: Book,
         title: "Family Law",
         slug: "family-law",
         description: "Marriage, divorce, succession, and guardianship laws.",
-        color: "bg-purple-100 text-purple-700",
+        color: "bg-purple-500/10 text-purple-400 border-purple-500/15",
     },
     {
         icon: FileText,
         title: "Contract Law",
         slug: "contract-law",
         description: "Agreements, obligations, and legal enforceability.",
-        color: "bg-teal-100 text-teal-700",
+        color: "bg-teal-500/10 text-teal-400 border-teal-500/15",
     },
 ];
 
 export function HomeTopics() {
     return (
-        <Section className="bg-white">
+        <Section>
             <div className="text-center max-w-3xl mx-auto mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary mb-4">Explore Legal Topics</h2>
-                <p className="text-gray-600 text-lg">
+                <div className="flex items-center justify-center gap-3 mb-4">
+                    <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Topics</span>
+                    <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-4">Explore Legal Topics</h2>
+                <p className="text-white/40 text-lg">
                     Dive deep into specific areas of Indian Law with our simplified guides.
                 </p>
             </div>
@@ -60,18 +65,18 @@ export function HomeTopics() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {categories.map((cat, index) => (
                     <Link key={index} href={`/learn/${cat.slug}`} className="group">
-                        <div className="bg-gray-50 hover:bg-white p-6 rounded-xl border border-gray-100 hover:border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-                            <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${cat.color} group-hover:scale-110 transition-transform`}>
-                                <cat.icon className="h-6 w-6" />
+                        <div className="glass-card p-6 hover:border-secondary/20 transition-all duration-300 h-full flex flex-col">
+                            <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-4 ${cat.color} border group-hover:scale-110 transition-transform`}>
+                                <cat.icon className="h-5 w-5" />
                             </div>
-                            <h3 className="text-xl font-bold font-serif text-primary mb-2 group-hover:text-secondary transition-colors">
+                            <h3 className="text-lg font-bold font-serif text-white mb-2 group-hover:text-secondary transition-colors">
                                 {cat.title}
                             </h3>
-                            <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                            <p className="text-white/40 text-sm leading-relaxed mb-4 flex-grow">
                                 {cat.description}
                             </p>
-                            <div className="text-sm font-bold text-primary flex items-center gap-1 mt-auto group-hover:gap-2 transition-all">
-                                Explore Topics <ArrowRight className="h-4 w-4" />
+                            <div className="text-sm font-bold text-secondary flex items-center gap-1 mt-auto group-hover:gap-2 transition-all">
+                                Explore <ArrowRight className="h-3.5 w-3.5" />
                             </div>
                         </div>
                     </Link>
@@ -79,7 +84,7 @@ export function HomeTopics() {
             </div>
 
             <div className="text-center mt-12">
-                <Link href="/learn" className="inline-flex items-center text-primary font-bold hover:text-secondary transition-colors border-b-2 border-primary hover:border-secondary pb-1">
+                <Link href="/learn" className="gold-button inline-flex items-center px-6 py-3 text-sm font-bold">
                     View All Topics &rarr;
                 </Link>
             </div>

@@ -6,9 +6,8 @@ interface SectionProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 export function Section({ className = "", variant = "default", children, ...props }: SectionProps) {
-    const bgColor = variant === "alternate" ? "bg-gray-50" : "bg-white";
     return (
-        <section className={`py-16 md:py-24 ${bgColor} ${className}`} {...props}>
+        <section className={`py-16 md:py-24 ${className}`} {...props}>
             <div className="container mx-auto px-4 md:px-6">
                 {children}
             </div>

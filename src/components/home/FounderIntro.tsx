@@ -10,7 +10,7 @@ export function FounderIntro() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Image */}
                 <div className="relative order-2 lg:order-1">
-                    <div className="aspect-[4/5] md:aspect-square bg-gray-100 rounded-2xl overflow-hidden relative shadow-xl">
+                    <div className="aspect-[4/5] md:aspect-square glass-card overflow-hidden relative">
                         <Image
                             src="/founder.jpg"
                             alt="Kalyan Biswas"
@@ -18,27 +18,26 @@ export function FounderIntro() {
                             className="object-cover"
                             priority
                         />
-                        {/* Decorative element */}
-                        <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary/20 rounded-full blur-2xl"></div>
-                        <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+                        {/* Decorative glow */}
+                        <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-secondary/10 rounded-full blur-3xl"></div>
                     </div>
                 </div>
 
                 {/* Content */}
                 <div className="order-1 lg:order-2 space-y-6">
-                    <div className="inline-flex items-center gap-2 text-secondary font-medium uppercase tracking-wider text-sm">
-                        <User className="h-4 w-4" />
-                        <span>Meet the Founder</span>
+                    <div className="flex items-center gap-3">
+                        <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Meet the Founder</span>
                     </div>
 
-                    <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary">
+                    <h2 className="text-3xl md:text-4xl font-bold font-serif text-white">
                         Kalyan Biswas
                     </h2>
-                    <h3 className="text-xl text-gray-600 font-medium">
+                    <h3 className="text-lg text-white/40 font-medium">
                         LLB Final Year, Surendranath Law College
                     </h3>
 
-                    <div className="space-y-4 text-gray-600 leading-relaxed">
+                    <div className="space-y-4 text-white/40 leading-relaxed">
                         <p>
                             Driven by a passion for teaching and a mission to democratize legal knowledge,
                             Kalyan founded LegalE Made to bridge the gap between complex legal statutes and
@@ -52,15 +51,15 @@ export function FounderIntro() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
                         {/* Experience */}
-                        <div className="bg-gray-50 border border-gray-100 rounded-lg p-4">
+                        <div className="glass-card p-4">
                             <div className="flex items-start gap-3">
-                                <div className="mt-1 bg-primary/10 p-2 rounded-full">
-                                    <BookOpen className="h-4 w-4 text-primary" />
+                                <div className="mt-1 bg-white/[0.06] p-2 rounded-full border border-white/[0.06]">
+                                    <BookOpen className="h-4 w-4 text-secondary" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-primary text-sm">Legal Intern</h4>
+                                    <h4 className="font-bold text-white text-sm">Legal Intern</h4>
                                     <p className="text-xs text-secondary font-medium">P. Nath & Associates • Jun 2025</p>
-                                    <p className="text-xs text-gray-600 mt-1 leading-relaxed line-clamp-2">
+                                    <p className="text-xs text-white/35 mt-1 leading-relaxed line-clamp-2">
                                         Legal research, drafting, and article writing.
                                     </p>
                                 </div>
@@ -68,21 +67,21 @@ export function FounderIntro() {
                         </div>
 
                         {/* Publication */}
-                        <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
+                        <div className="glass-card-gold p-4">
                             <div className="flex items-start gap-3">
-                                <div className="mt-1 bg-secondary/10 p-2 rounded-full">
+                                <div className="mt-1 bg-secondary/10 p-2 rounded-full border border-secondary/15">
                                     <FileText className="h-4 w-4 text-secondary" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-primary text-sm">Research Publication</h4>
-                                    <p className="text-xs text-gray-900 font-bold mt-1 line-clamp-1">Mind Over Machine: Who is Controlling Whom?</p>
-                                    <p className="text-xs text-gray-500 mt-0.5">Journal of Legal Research and Polity (2025)</p>
+                                    <h4 className="font-bold text-white text-sm">Research Publication</h4>
+                                    <p className="text-xs text-white/70 font-bold mt-1 line-clamp-1">Mind Over Machine: Who is Controlling Whom?</p>
+                                    <p className="text-xs text-white/35 mt-0.5">Journal of Legal Research and Polity (2025)</p>
                                     <div className="flex gap-2 mt-2">
-                                        <a href="/Mind-Over-Machine.pdf" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
+                                        <a href="/Mind-Over-Machine.pdf" target="_blank" className="text-[10px] font-bold text-secondary hover:text-white underline decoration-dotted transition-colors">
                                             Read PDF
                                         </a>
-                                        <span className="text-gray-300">|</span>
-                                        <a href="https://doi.org/10.64322/JLRP.2025.1104" target="_blank" className="text-[10px] font-bold text-primary hover:text-secondary underline decoration-dotted">
+                                        <span className="text-white/15">|</span>
+                                        <a href="https://doi.org/10.64322/JLRP.2025.1104" target="_blank" className="text-[10px] font-bold text-secondary hover:text-white underline decoration-dotted transition-colors">
                                             DOI Link
                                         </a>
                                     </div>
@@ -91,17 +90,17 @@ export function FounderIntro() {
                         </div>
                     </div>
 
-                    <div className="pt-4 flex flex-wrap gap-4">
+                    <div className="pt-4 flex flex-wrap gap-3">
                         <Link href="/about">
-                            <Button variant="outline" className="border-primary text-primary hover:!bg-primary hover:!text-white">
+                            <button className="glass-button h-10 px-6 text-sm font-medium">
                                 Read Full Story
-                            </Button>
+                            </button>
                         </Link>
                         <Link href="https://www.linkedin.com/in/kalyan-biswas-521194365/" target="_blank" rel="noopener noreferrer">
-                            <Button variant="ghost" className="gap-2 text-primary border border-gray-200 hover:!bg-[#0077b5] hover:!text-white hover:!border-[#0077b5] transition-all">
+                            <button className="glass-button h-10 px-6 text-sm font-medium flex items-center gap-2 hover:!bg-[#0077b5]/20 hover:!border-[#0077b5]/40 hover:!text-[#0077b5] transition-all">
                                 <Linkedin className="h-4 w-4" />
-                                Connect on LinkedIn
-                            </Button>
+                                LinkedIn
+                            </button>
                         </Link>
                     </div>
                 </div>

@@ -8,10 +8,16 @@ export default function AboutPage() {
     return (
         <>
             {/* Header */}
-            <section className="bg-primary text-white py-20">
-                <Container className="text-center">
+            <section className="py-20 text-white relative overflow-hidden">
+                <div className="watermark-text top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">ABOUT</div>
+                <Container className="text-center relative z-10">
+                    <div className="flex items-center justify-center gap-3 mb-6">
+                        <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                        <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Our Story</span>
+                        <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                    </div>
                     <h1 className="text-4xl md:text-5xl font-bold font-serif mb-6">About LegalE Made</h1>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-xl text-white/40 max-w-2xl mx-auto">
                         Where passion for teaching meets the mission of simplifying justice.
                     </p>
                 </Container>
@@ -21,66 +27,55 @@ export default function AboutPage() {
             <Section>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     <div className="space-y-6">
-                        <div className="inline-flex items-center gap-2 text-secondary font-medium uppercase tracking-wider text-sm">
-                            <span>The Journey</span>
+                        <div className="flex items-center gap-3">
+                            <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">The Journey</span>
                         </div>
-                        <h2 className="text-3xl font-bold font-serif text-primary">Kalyan Biswas</h2>
-                        <h3 className="text-lg text-gray-500 font-medium">Founder & Legal Educator</h3>
+                        <h2 className="text-3xl font-bold font-serif text-white">Kalyan Biswas</h2>
+                        <h3 className="text-lg text-white/40 font-medium">Founder & Legal Educator</h3>
 
-                        <div className="prose prose-lg text-gray-600 space-y-4">
+                        <div className="text-white/40 space-y-4 leading-relaxed">
                             <p>
                                 Kalyan Biswas, a final year BA.LLB student at Surendranath Law College under Calcutta University, founded LegalEmade with a clear mission to spread legal knowledge among the common people. His journey is driven by a unique blend of academic rigor, practical advocacy, and a deep-seated passion for teaching.
                             </p>
                             <p>
-                                His practical experience includes serving as a Legal Intern at Daslegal Advocates and P. Nath & Associates, where he honed his skills in comprehensive article writing, in-depth legal research, and drafting crucial legal documents. This hands-on exposure to proceedings reinforced his belief that the complexity of law should not be a barrier to justice.
+                                His practical experience includes serving as a Legal Intern at Daslegal Advocates and P. Nath & Associates, where he honed his skills in comprehensive article writing, in-depth legal research, and drafting crucial legal documents.
                             </p>
                             <p>
-                                A forward-thinking researcher, Kalyan has also contributed to contemporary legal discourse. His publication, "Mind Over Machine: Who is Controlling Whom?" (Journal of Legal Research and Polity, 2025), critically examines the intersection of Artificial Intelligence and Human Rights. Through LegalEmade, he combines this scholarly depth with accessible explanation to empower every citizen.
+                                A forward-thinking researcher, Kalyan has also contributed to contemporary legal discourse. His publication, &quot;Mind Over Machine: Who is Controlling Whom?&quot; (Journal of Legal Research and Polity, 2025), critically examines the intersection of Artificial Intelligence and Human Rights.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-gray-100 rounded-2xl aspect-[4/5] relative overflow-hidden shadow-lg border-4 border-white">
-                        <Image
-                            src="/founder.jpg"
-                            alt="Kalyan Biswas"
-                            fill
-                            className="object-cover"
-                        />
+                    <div className="glass-card aspect-[4/5] relative overflow-hidden">
+                        <Image src="/founder.jpg" alt="Kalyan Biswas" fill className="object-cover" />
                     </div>
                 </div>
             </Section>
 
             {/* Experience & Publications */}
-            <Section className="bg-gray-50 border-y border-gray-200">
+            <Section>
                 <div className="max-w-4xl mx-auto space-y-12">
                     <div className="text-center">
-                        <h2 className="text-3xl font-bold font-serif text-primary mb-4">Professional Profile</h2>
-                        <p className="text-gray-600 text-lg">
-                            Academic achievements and legal contributions.
-                        </p>
+                        <h2 className="text-3xl font-bold font-serif text-white mb-4">Professional Profile</h2>
+                        <p className="text-white/40 text-lg">Academic achievements and legal contributions.</p>
                     </div>
 
                     <div className="space-y-6">
-                        {/* Experience Card */}
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <div className="glass-card p-8">
                             <div className="flex flex-col md:flex-row gap-6 items-start">
-                                <div className="bg-primary/5 p-4 rounded-xl shrink-0">
-                                    <Briefcase className="h-8 w-8 text-primary" />
+                                <div className="bg-white/[0.06] p-4 rounded-xl shrink-0 border border-white/[0.06]">
+                                    <Briefcase className="h-8 w-8 text-secondary" />
                                 </div>
                                 <div className="space-y-2">
                                     <div className="flex flex-wrap justify-between items-start gap-2">
                                         <div>
-                                            <h3 className="text-xl font-bold text-primary font-serif">Legal Intern</h3>
+                                            <h3 className="text-xl font-bold text-white font-serif">Legal Intern</h3>
                                             <p className="text-secondary font-medium">P. Nath & Associates</p>
                                         </div>
-                                        <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
-                                            Jun 2025 (1 mo)
-                                        </span>
+                                        <span className="badge-pill text-xs">Jun 2025 (1 mo)</span>
                                     </div>
-                                    <p className="text-gray-600 leading-relaxed">
-                                        Active contribution to legal proceedings with a primary focus on:
-                                    </p>
-                                    <ul className="list-disc list-inside text-gray-600 ml-2 space-y-1">
+                                    <p className="text-white/40 leading-relaxed">Active contribution to legal proceedings with a primary focus on:</p>
+                                    <ul className="list-disc list-inside text-white/40 ml-2 space-y-1">
                                         <li>Comprehensive Article Writing</li>
                                         <li>In-depth Legal Research</li>
                                         <li>Drafting Legal Documents</li>
@@ -89,49 +84,31 @@ export default function AboutPage() {
                             </div>
                         </div>
 
-                        {/* Publication Card */}
-                        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                        <div className="glass-card-gold p-8">
                             <div className="flex flex-col md:flex-row gap-6 items-start">
-                                <div className="bg-secondary/10 p-4 rounded-xl shrink-0">
+                                <div className="bg-secondary/10 p-4 rounded-xl shrink-0 border border-secondary/15">
                                     <FileText className="h-8 w-8 text-secondary" />
                                 </div>
                                 <div className="space-y-4 flex-grow">
                                     <div>
-                                        <h3 className="text-xl font-bold text-primary font-serif leading-tight">
-                                            Mind Over Machine: Who is Controlling Whom?
-                                        </h3>
-                                        <p className="text-gray-500 text-sm mt-1 font-medium">
-                                            Published in <span className="text-primary font-semibold">Journal of Legal Research and Polity</span> • Vol. 1 No. 1 (2025)
+                                        <h3 className="text-xl font-bold text-white font-serif leading-tight">Mind Over Machine: Who is Controlling Whom?</h3>
+                                        <p className="text-white/40 text-sm mt-1 font-medium">
+                                            Published in <span className="text-secondary font-semibold">Journal of Legal Research and Polity</span> • Vol. 1 No. 1 (2025)
                                         </p>
                                     </div>
-
                                     <div className="flex flex-wrap gap-2">
                                         {["Artificial Intelligence", "Human Rights", "Algorithmic Control"].map((tag, i) => (
-                                            <span key={i} className="text-xs font-medium bg-gray-50 border border-gray-200 text-gray-600 px-2 py-1 rounded">
-                                                {tag}
-                                            </span>
+                                            <span key={i} className="badge-pill text-xs">{tag}</span>
                                         ))}
                                     </div>
-
-                                    <p className="text-gray-600 text-sm leading-relaxed border-l-4 border-secondary/30 pl-4 italic">
-                                        "In the contemporary period AI is becoming more potent that can even influence the human mind... This study has tried to uphold the influence of Artificial Intelligence (AI) on human society and at present how the mind of people has been controlled by machine."
+                                    <p className="text-white/40 text-sm leading-relaxed border-l-4 border-secondary/20 pl-4 italic">
+                                        &quot;In the contemporary period AI is becoming more potent that can even influence the human mind... This study has tried to uphold the influence of Artificial Intelligence (AI) on human society.&quot;
                                     </p>
-
-                                    <div className="flex flex-wrap gap-4 pt-2">
-                                        <a
-                                            href="/Mind-Over-Machine.pdf"
-                                            target="_blank"
-                                            className="inline-flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors"
-                                        >
-                                            <Download className="h-4 w-4" />
-                                            Download PDF
+                                    <div className="flex flex-wrap gap-3 pt-2">
+                                        <a href="/Mind-Over-Machine.pdf" target="_blank" className="gold-button px-4 py-2 text-sm font-bold inline-flex items-center gap-2">
+                                            <Download className="h-4 w-4" /> Download PDF
                                         </a>
-                                        <a
-                                            href="https://doi.org/10.64322/JLRP.2025.1104"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 bg-white text-primary border border-primary px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/5 transition-colors"
-                                        >
+                                        <a href="https://doi.org/10.64322/JLRP.2025.1104" target="_blank" rel="noopener noreferrer" className="glass-button px-4 py-2 text-sm font-bold">
                                             DOI Link
                                         </a>
                                     </div>
@@ -143,53 +120,42 @@ export default function AboutPage() {
             </Section>
 
             {/* Mission & Values */}
-            <Section variant="alternate">
+            <Section>
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-3xl font-bold font-serif text-primary mb-4">Our Mission</h2>
-                    <p className="text-gray-600 text-lg">
-                        To democratize legal education by making it accessible, understandable, and affordable
-                        for every student and citizen in India.
+                    <h2 className="text-3xl font-bold font-serif text-white mb-4">Our Mission</h2>
+                    <p className="text-white/40 text-lg">
+                        To democratize legal education by making it accessible, understandable, and affordable for every student and citizen in India.
                     </p>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
-                            <Target className="h-6 w-6" />
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {[
+                        { icon: Target, title: "Simplicity First", desc: "We prioritize clarity over complexity in every explanation." },
+                        { icon: BookOpen, title: "Academic Excellence", desc: "Rigorous research ensures our content is accurate and reliable." },
+                        { icon: Heart, title: "Passion for Justice", desc: "Inspiring the next generation of lawyers to serve with integrity." },
+                    ].map((item, i) => (
+                        <div key={i} className="glass-card p-8 text-center hover:border-secondary/20 transition-all duration-300">
+                            <div className="w-12 h-12 bg-white/[0.06] rounded-xl flex items-center justify-center mx-auto mb-4 text-secondary border border-white/[0.06]">
+                                <item.icon className="h-6 w-6" />
+                            </div>
+                            <h3 className="font-bold text-lg mb-2 text-white">{item.title}</h3>
+                            <p className="text-white/40 text-sm">{item.desc}</p>
                         </div>
-                        <h3 className="font-bold text-lg mb-2 text-primary">Simplicity First</h3>
-                        <p className="text-gray-600 text-sm">We prioritize clarity over complexity in every explanation.</p>
-                    </div>
-                    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
-                            <BookOpen className="h-6 w-6" />
-                        </div>
-                        <h3 className="font-bold text-lg mb-2 text-primary">Academic Excellence</h3>
-                        <p className="text-gray-600 text-sm">Rigorous research ensures our content is accurate and reliable.</p>
-                    </div>
-                    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
-                        <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
-                            <Heart className="h-6 w-6" />
-                        </div>
-                        <h3 className="font-bold text-lg mb-2 text-primary">Passion for Justice</h3>
-                        <p className="text-gray-600 text-sm">inspiring the next generation of lawyers to serve with integrity.</p>
-                    </div>
+                    ))}
                 </div>
             </Section>
 
             {/* CTA */}
-            <Section className="!bg-primary text-white text-center">
-                <h2 className="text-3xl font-serif font-bold mb-6">Join Our Growing Community</h2>
-                <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                    Whether you are a law student or a curious citizen, there is a place for you here.
-                </p>
-                <div className="flex justify-center gap-4">
-                    <Link href="/contact">
-                        <Button size="lg" variant="secondary" className="font-bold">Get in Touch</Button>
-                    </Link>
-                    <Link href="/learn">
-                        <Button size="lg" variant="outline" className="border-white text-white !bg-transparent hover:!bg-white hover:!text-primary">Start Learning</Button>
-                    </Link>
+            <Section className="text-center">
+                <div className="glass-card-gold p-12 md:p-16 max-w-4xl mx-auto relative overflow-hidden">
+                    <div className="watermark-text top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8rem]">JOIN</div>
+                    <div className="relative z-10">
+                        <h2 className="text-3xl font-serif font-bold mb-6 text-white">Join Our Growing Community</h2>
+                        <p className="text-white/40 mb-8 max-w-2xl mx-auto">Whether you are a law student or a curious citizen, there is a place for you here.</p>
+                        <div className="flex justify-center gap-4 flex-wrap">
+                            <Link href="/contact"><button className="gold-button h-12 px-8 text-base font-bold">Get in Touch</button></Link>
+                            <Link href="/learn"><button className="glass-button h-12 px-8 text-base font-medium">Start Learning</button></Link>
+                        </div>
+                    </div>
                 </div>
             </Section>
         </>

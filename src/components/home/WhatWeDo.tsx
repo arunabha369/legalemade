@@ -26,25 +26,30 @@ const services = [
 
 export function WhatWeDo() {
     return (
-        <Section variant="alternate">
+        <Section>
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold font-serif text-primary">What We Do</h2>
-                <p className="text-gray-600 text-lg">
-                    We bridge the gap between complex legal texts and practical understanding through our comprehensive offerings.
+                <div className="flex items-center justify-center gap-3 mb-4">
+                    <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">Our Services</span>
+                    <span className="w-8 h-[2px] bg-secondary rounded-full" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold font-serif text-white">What We Do</h2>
+                <p className="text-white/40 text-lg">
+                    We bridge the gap between complex legal texts and practical understanding.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 group"
+                        className="glass-card p-8 group hover:border-secondary/20 transition-all duration-300"
                     >
-                        <div className="w-14 h-14 bg-primary/5 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-primary">
-                            <service.icon className="h-7 w-7" />
+                        <div className="w-12 h-12 bg-white/[0.06] rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary/15 transition-all duration-300 text-secondary border border-white/[0.06] group-hover:border-secondary/20">
+                            <service.icon className="h-6 w-6" />
                         </div>
-                        <h3 className="text-xl font-serif font-bold text-primary mb-3">{service.title}</h3>
-                        <p className="text-gray-600 leading-relaxed text-sm">
+                        <h3 className="text-lg font-serif font-bold text-white mb-3">{service.title}</h3>
+                        <p className="text-white/40 leading-relaxed text-sm">
                             {service.description}
                         </p>
                     </div>
